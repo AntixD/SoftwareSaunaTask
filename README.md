@@ -5,8 +5,8 @@ Getting Started
 Installation
 
 To install the necessary dependencies and run the tests, execute the following commands:
-npm install
-npm test
+- npm install |
+- npm test |
 
 Implementation Details
 Core Modules
@@ -32,7 +32,7 @@ This project is fully tested using Jest, with tests organized by module. Both un
 Running Tests
 To run all tests:
 
-npm test
+- npm test | 
 Test Structure
 Unit Tests: Located alongside their respective modules, testing isolated pieces of logic.
 Acceptance Tests: Located in tests/, ensuring the overall program behaves as expected with various example grids.
