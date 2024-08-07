@@ -9,32 +9,50 @@ npm install
 npm test
 
 Project Structure
+src/: The main directory containing the core logic, helpers, modules, and type definitions.
 
-src/
-├── constants/                      # Contains project-wide constants.
-│   └── gridConstants.ts            # Constants related to grid traversal.
-├── core/                           # Core modules for path following and traversal logic.
-│   ├── followPath/
-│   │   ├── followPath.ts           # Main logic for following the path on the grid.
-│   │   └── followPath.test.ts      # Tests for the followPath module.
-│   ├── traversal/
-│   │   ├── traversal.ts            # Logic for grid traversal and letter collection.
-│   │   └── traversal.test.ts       # Unit tests for the traversal module.
-├── helpers/                        # Helper modules providing utility functions.
-│   ├── file/
-│   │   ├── readFileUtil.ts         # Functions for reading and processing input files.
-│   │   └── readFileUtil.test.ts    # Tests for file utility functions.
-│   ├── string/
-│   │   ├── stringHelpers.ts        # Utility functions for string manipulation.
-│   │   └── stringHelpers.test.ts   # Tests for string utilities.
-│   └── validation/
-│       └── frequencyValidator.ts   # Validation logic for character frequencies.
-├── modules/                        # Additional modules for direction, grid, and node logic.
-├── types/                          # TypeScript type definitions and interfaces.
-├── data/                           # Example grid files used for testing and validation.
-│   ├── example_01.txt
-│   ├── ...
-└── tests/                          # High-level acceptance tests and additional unit tests.
+constants/: Contains project-wide constants.
+
+gridConstants.ts: Holds constants related to grid traversal.
+core/: Core modules that handle the main functionality of the project.
+
+followPath/:
+  followPath.ts: The main logic for following the path on the grid.
+  followPath.test.ts: Unit tests for the followPath module.
+traversal/:
+  traversal.ts: Implements the logic for grid traversal and letter collection.
+  traversal.test.ts: Unit tests for the traversal module.
+helpers/: Utility modules that assist with various tasks across the project.
+
+file/:
+readFileUtil.ts: Functions for reading and processing input files.
+readFileUtil.test.ts: Unit tests for the file utility functions.
+string/:
+stringHelpers.ts: Contains utility functions for string manipulation.
+stringHelpers.test.ts: Unit tests for the string utilities.
+validation/:
+frequencyValidator.ts: Validation logic for ensuring correct character frequencies in the grid.
+modules/: Additional modules focused on handling specific areas of the grid and path traversal logic, such as direction handling, grid utilities, and node processing.
+
+types/:
+
+index.ts: TypeScript type definitions, enums, and interfaces used across the project for type safety and clarity.
+data/:
+
+Contains example grid files used for testing and validation, ensuring that the solution works as expected across different scenarios.
+tests/:
+
+Holds high-level acceptance tests that ensure the program gives correct output for given inputs, as well as additional unit tests where applicable.
+package.json:
+
+The project's configuration file that includes metadata about the project, dependencies, scripts, and more.
+jest.config.ts:
+
+Configuration file for Jest, the testing framework used in this project.
+tsconfig.json:
+
+TypeScript configuration file that defines the compiler options and the structure of the TypeScript project.
+
 
 Implementation Details
 Core Modules
